@@ -1,4 +1,5 @@
 import 'package:bwa_chaty/theme.dart';
+import 'package:bwa_chaty/widgets/chat_tile.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -51,40 +52,23 @@ class HomePage extends StatelessWidget {
                       'Friends',
                       style: titleTextStyle,
                     ),
-                    SizedBox(
-                      height: 16,
+                    ChatTile(
+                      imageUrl: 'assets/images/friends1.png',
+                      name: 'Wahyu',
+                      text: 'Halo Bro Apa Kabar',
+                      time: 'Now',
                     ),
-                    Row(
-                      children: [
-                        Image.asset(
-                          'assets/images/friends1.png',
-                          width: 55,
-                          height: 55,
-                        ),
-                        SizedBox(
-                          width: 12,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Wahyu',
-                              style: titleTextStyle,
-                            ),
-                            Text(
-                              'Sorry, Youre not my ty..',
-                              style: subtitle.copyWith(
-                                color: blakColor,
-                              ),
-                            )
-                          ],
-                        ),
-                        Spacer(),
-                        Text(
-                          'NOW',
-                          style: subtitle,
-                        )
-                      ],
+                    ChatTile(
+                      imageUrl: 'assets/images/friends2.png',
+                      name: 'Erin',
+                      text: 'Hai Udah Makan Belom?',
+                      time: '2:37',
+                    ),
+                    ChatTile(
+                      imageUrl: 'assets/images/friends3.png',
+                      name: 'Radit',
+                      text: 'Ayo Ngopi Bos',
+                      time: 'Yesterday',
                     ),
                   ],
                 ),

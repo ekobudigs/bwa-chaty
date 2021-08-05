@@ -9,11 +9,11 @@ Color greenColor = Color(0xff29CB9E);
 
 TextStyle titleTextStyle = TextStyle(
   color: blakColor,
-  fontWeight: FontWeight.w300,
+  fontWeight: FontWeight.w600,
   fontSize: 16,
 );
 
 TextStyle subtitle = TextStyle(
-  color: Color(0xff787A91),
+  color: Color(0xff0F52BA),
   fontWeight: FontWeight.w300,
 );
