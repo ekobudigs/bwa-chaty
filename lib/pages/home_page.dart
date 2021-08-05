@@ -31,6 +31,63 @@ class HomePage extends StatelessWidget {
               Text(
                 'Liburan',
                 style: TextStyle(color: lightBlueColor, fontSize: 16),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(30),
+                decoration: BoxDecoration(
+                  color: whiteColor,
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(40),
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Friends',
+                      style: titleTextStyle,
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'assets/images/friends1.png',
+                          width: 55,
+                          height: 55,
+                        ),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Wahyu',
+                              style: titleTextStyle,
+                            ),
+                            Text(
+                              'Sorry, Youre not my ty..',
+                              style: subtitle.copyWith(
+                                color: blakColor,
+                              ),
+                            )
+                          ],
+                        ),
+                        Spacer(),
+                        Text(
+                          'NOW',
+                          style: subtitle,
+                        )
+                      ],
+                    ),
+                  ],
+                ),
               )
             ],
           ),

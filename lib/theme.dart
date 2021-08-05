@@ -14,6 +14,6 @@ TextStyle titleTextStyle = TextStyle(
 );
 
 TextStyle subtitle = TextStyle(
-  color: greenColor,
+  color: Color(0xff787A91),
   fontWeight: FontWeight.w300,
 );
